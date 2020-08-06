@@ -1,16 +1,15 @@
-<template>
-    <div id="app">
-        <!-- Put stuff you always want to exist here (like a nav bar)  -->
-        
-        <!-- This (below) will load to the Home page by default -->
-        <router-view/>
-    </div>
+<template lang="pug">
+    #app
+        // [ Put stuff you always want to exist here (like a nav bar) ]
+        // This (below) will load to the Home page by default 
+        router-view
 </template>
-
 <script>
     // libs and plugins
     import Vue from "vue"
     import { Router } from './plugins/router-plugin'
+    import './plugins/css-baseline-plugin'
+    import './plugins/good-vue-plugin'
     
     // Pages 
     import pages from "./pages/*.vue"
